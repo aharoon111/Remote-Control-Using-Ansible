@@ -1,0 +1,6 @@
+---
+- name: "hello world webbage"
+  hosts: all
+  roles:
+    - prepare
+    - apache
