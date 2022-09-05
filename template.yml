@@ -6,7 +6,7 @@ Resources:
     Type: 'AWS::EC2::Instance'
     Properties:
       SecurityGroups:
-        -!Ref InstanceSecurityGroup
+        -!GetAtt "InstanceSecurityGroup"
       # Change this, as applicable to you      
       KeyName: uu
       # Change this, as applicable to you
