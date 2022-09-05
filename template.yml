@@ -5,8 +5,8 @@ Resources:
   EC2Instance:
     Type: 'AWS::EC2::Instance'
     Properties:
-      SecurityGroups:
-        -!GetAtt "InstanceSecurityGroup"
+      SecurityGroupsId:
+        -!GetAtt "InstanceSecurityGroup.GroupId"
       # Change this, as applicable to you      
       KeyName: uu
       # Change this, as applicable to you
@@ -17,6 +17,7 @@ Resources:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
       GroupDescription: Enable SSH access via port 22
+      VpcId: !Ref EC2Instance
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: '22'
