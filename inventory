@@ -1,5 +1,5 @@
 [all]
-18.215.152.131
+ec2-52-23-211-246.compute-1.amazonaws.com
 
 [all:vars]
 ansible_ssh_user=ubuntu

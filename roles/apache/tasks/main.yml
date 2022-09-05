@@ -9,6 +9,9 @@
     update_cache: yes
 
 - name: "install index page"
+  become: true
+  become_method: sudo
+  become_user: root
   copy: 
     src: index.html
     dest: /var/www/html/
