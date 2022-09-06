@@ -1,6 +1,7 @@
 ---
 - name: "hello world webbage"
   hosts: all
+  gather_facts: no
   roles:
     - prepare
     - apache
