@@ -5,8 +5,8 @@ Resources:
   EC2Instance:
     Type: 'AWS::EC2::Instance'
     Properties:
-      SecurityGroups:
-        Ref: InstanceSecurityGroup
+      SecurityGroups: 
+        - Ref: InstanceSecurityGroup
       InstanceType: t2.micro
       ImageId: 'ami-0b0ea68c435eb488d' 
       KeyName: uu
