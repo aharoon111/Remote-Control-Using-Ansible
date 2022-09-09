@@ -1,4 +1,5 @@
 [all]
-ec2-44-211-66-102.compute-1.amazonaws.com
+54.234.216.26
 
-
+[defaults]
+host_key_checking = false
