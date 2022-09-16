@@ -5,6 +5,7 @@
   # Use the public IP if the VM is already created
   hosts: 54.211.72.195
   gather_facts: no
+  user: ubuntu
   become: true
   become_method: sudo
   become_user: root
