@@ -1,2 +1,2 @@
 [all]
-ec2-54-242-2-87.compute-1.amazonaws.com
+54.211.72.195
