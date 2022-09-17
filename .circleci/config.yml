@@ -34,8 +34,8 @@ jobs:
         - run:
             name: Create Cloudformation Stack
             command: |
-              aws configure set aws_access_key_id $F92nHVQPddvQIK/LvFPBo8sJ2Q3CuxrzJtOeIOhS
-              aws configure set aws_secret_access_key $FwoGZXIvYXdzEID//////////wEaDPzE6tgkaityQGAEvyK8AbfqxHwAKedz4OcAFcyvL8eL7a2sziOZthEg1bQYnXYsbUjQM3KJBktld8FkNMxbBgJO2ATnWi0JUZpzm2u2VixrDPjOcnw3Urt3EQ2S7SzkGS2vOWpqcPmm5ElX9eptEhRk5ghC7dXYJHoTkAjhHDjQdnaJtbh0X1/KHcLrywX7BEnDXslmhz2iISznK0Z4AEOrznrdlDkvW/zTlB0Q0uEAylyXjV2Fwo0tyrpudDfVEWOEbzmX0qWOKvVGKMm2l5kGMi2fBotbLbfri3dIQ/Qg5CGIZIqxBdkJbRnl97L50JAfEmOr0XI2920jt65OTbo=
+              aws configure set aws_access_key_id AKIA4MWC72LVWWGRFRHW
+              aws configure set aws_secret_access_key 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
               aws cloudformation deploy \
                 --template-file template.yml \
                 --stack-name myStack-${CIRCLE_WORKFLOW_ID:0:5} \
