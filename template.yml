@@ -9,7 +9,7 @@ Resources:
         - Ref: InstanceSecurityGroup
       InstanceType: t2.micro
       ImageId: 'ami-0b0ea68c435eb488d' 
-      KeyName: uu
+      KeyName: test
       # Change this, as applicable to you      
       
       # Change this, as applicable to you

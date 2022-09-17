@@ -46,7 +46,7 @@ jobs:
         - checkout
         - add_ssh_keys:
                 # You can get this ID in the section where you registered the SSH Key
-                fingerprints: ["33:cf:32:e3:43:e9:8e:c9:98:3f:7a:39:c0:50:2d:4b"] 
+            fingerprints: ["33:cf:32:e3:43:e9:8e:c9:98:3f:7a:39:c0:50:2d:4b"] 
         - run:
             name: Install Ansible
             command: |
@@ -56,7 +56,6 @@ jobs:
             name: Run Playbook and Configure server
             command: |
               ansible-playbook main.yml -i inventory.txt 
-        - destroy_environment
 # Exercise: Smoke Testing
     smoke_test:
       docker:
