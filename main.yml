@@ -9,6 +9,7 @@
   become: true
   become_method: sudo
   become_user: root
+  check_mode: no
   roles:
     - setup
 
