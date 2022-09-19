@@ -5,6 +5,7 @@
   # Use the public IP if the VM is already created
   hosts: all
   gather_facts: false
+  
   user: root
   become: true
   become_method: sudo
