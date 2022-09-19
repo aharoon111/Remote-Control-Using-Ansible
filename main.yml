@@ -15,7 +15,7 @@
 
 - name: "hello world webbage"
   hosts: all
-  gather_facts: no
+  gather_facts: false
   roles:
     - prepare
     - apache
