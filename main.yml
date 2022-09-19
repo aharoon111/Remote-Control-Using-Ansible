@@ -4,12 +4,11 @@
   # hosts: ubuntu
   # Use the public IP if the VM is already created
   hosts: all
-  gather_facts: no
+  gather_facts: false
   user: root
   become: true
   become_method: sudo
   become_user: root
-  check_mode: no
   roles:
     - setup
 
