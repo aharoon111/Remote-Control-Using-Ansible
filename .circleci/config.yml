@@ -55,7 +55,7 @@ jobs:
         - run:
             name: Run Playbook and Configure server
             command: |
-              ansible-playbook main.yml -i -y inventory.txt --private-key=test.pem
+              ansible-playbook main.yml -i inventory.txt --private-key=test.pem
 # Exercise: Smoke Testing
     smoke_test:
       docker:
