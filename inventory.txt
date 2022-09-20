@@ -3,4 +3,4 @@ ec2-44-202-253-24.compute-1.amazonaws.com
 
 
 [all:vars]
-ansible_ssh_common_args='-o StrictHostKeyChecking=accept-new'
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
