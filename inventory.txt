@@ -1,6 +1,4 @@
 [all]
-ec2-184-72-187-70.compute-1.amazonaws.com
+ec2-54-205-123-171.compute-1.amazonaws.com
 
 
-[all:vars]
-ansible_ssh_common_args='-o StrictHostKeyChecking=no'
